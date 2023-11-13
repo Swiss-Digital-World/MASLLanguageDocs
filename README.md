@@ -229,6 +229,8 @@ You can access the survey data using the directive @survey as below
 ```MASL
 @beginportdata
 
+Port Data
+
 @port('name')
 @port('number')
 @port('berth')
@@ -243,6 +245,43 @@ Port Data Photo Notes
 @endfornote
 
 @endportdata
+```
+
+## Vessel Data
+
+```MASL
+@beginvesseldata
+
+Vessel Data
+
+### @vessel('name')
+### Manager: @vessel('manager')
+
+IMO: @vessel('imo')
+
+Length: @vessel('length') meters
+Draft: @vessel('draft') meters
+GT: @vessel('gt') tons
+NT: @vessel('nt') tons
+DWT: @vessel('dwt') tons
+
+Vessel Data Photo Notes
+
+@beginfornote
+Note: @note('note')
+Date: @note('date') @note('time')
+@noteimg('100x100')
+@newline
+@endfornote
+
+Vessel Data Holds
+
+@beginforhold
+#### @hold('notes') at @hold('date')
+Dimensions: @hold('l') x @hold('w') x @hold('h')
+@endforhold
+
+@endvesseldata
 ```
 
 ## User Data
