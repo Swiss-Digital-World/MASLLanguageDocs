@@ -224,6 +224,27 @@ You can access the survey data using the directive @survey as below
 // etc
 ```
 
+## Port Data
+
+```MASL
+@beginportdata
+
+@port('name')
+@port('number')
+@port('berth')
+
+Port Data Photo Notes
+
+@beginfornote
+@note('note')
+@note('date')
+@note('time')
+@noteimg('100x100')
+@endfornote
+
+@endportdata
+```
+
 ## User Data
 
 You can access the current user data using the directive @user as below
@@ -283,7 +304,7 @@ Warning: Please note that @beginfornote is not to be used outside of the @beginf
 @endcol
 
 @begincol
-@noteimg100 // Gives the note image with height of 100px (available height are from 50 - 500 px)
+@noteimg('100x100') // Gives the note image with height and width of 100px
 @endcol
 
 @endrow
