@@ -284,6 +284,49 @@ Dimensions: @hold('l') x @hold('w') x @hold('h')
 @endvesseldata
 ```
 
+## Cargo Data
+
+```MASL
+@begincargodata
+
+Cargo Data
+
+Total Freight Tons: @cargo('total_freight_tons')
+Total Packages: @cargo('packages')
+Total Weight: @cargo('weight')
+
+Cargo Data Photo Notes
+
+@beginfornote
+Note: @note('note')
+Date: @note('date') at @note('time')
+@noteimg('100x100')
+@endfornote
+
+Cargo Data Packages
+
+@beginforpackage
+
+Package Data
+
+Number: @package('number')
+Date: @package('date')
+Description: @package('description')
+
+Package Photo Notes
+
+@beginfornote
+Note: @note('note')
+Date: @note('date') at @note('time')
+@noteimg('50x50')
+@endfornote
+@horizontalline
+@endforpackage
+
+@endcargodata
+```
+
+
 ## User Data
 
 You can access the current user data using the directive @user as below
