@@ -405,5 +405,8 @@ Formatters are keywords used to help facilitate page formatting like newline and
 | @newline | Leaves a blank line and starts a new empty line |
 | @horizontalline | Generaes a horizontal separator line to separate content |
 | @pagebreak | Jumps to a new empty page |
+| @date | Gets the current date |
+| @datetime | Gets the current date and time |
+| @time | Gets the current time |
 
 
