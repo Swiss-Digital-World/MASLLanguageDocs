@@ -220,6 +220,8 @@ You can access the survey data using the directive @survey as below
 @survey('dateAdded') // Gives the date at which the survey was created
 @survey('fullName') // Gives the client for the survey
 @survey('referenceNumber') // Gives the reference number for the survey
+@survey('startdate') // Gives the start date of the survey
+@survey('enddate') // Gives the end date of the survey
 
 // etc
 ```
@@ -334,6 +336,9 @@ You can access the current user data using the directive @user as below
 ```MASL
 @user('username') // Gives the username of the current user
 @user('email') // Gives the email of the current user
+@user('phone') // Gives the phone of the current user
+@user('address') // Gives the address of the current user (City, Country)
+@user('logo,25x25') // Displays user photo in 25 pixels width by 25 pixels height
 
 // etc
 ```
