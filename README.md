@@ -338,7 +338,23 @@ You can access the current user data using the directive @user as below
 @user('email') // Gives the email of the current user
 @user('phone') // Gives the phone of the current user
 @user('address') // Gives the address of the current user (City, Country)
-@user('logo,25x25') // Displays user photo in 25 pixels width by 25 pixels height
+@user('logo,25x25') // Displays user photo in 25 pixels width by 25 pixels height (From the user details page in the settings)
+@user('companylogo,30x35') // Displays user company photo in 30 pixels width by 35 pixels height (From the user details page in the settings)
+
+// etc
+```
+
+## Client Data
+
+You can access the current user data using the directive @client as below
+
+```MASL
+@client('name') // Gives the name of the survey client
+@client('phone') // Gives the phone number of the survey client
+@client('email') // Gives the email of the survey client
+@client('company') // Gives the compnay name of the survey client
+@client('address') // Gives the address of the survey client (City, Country)
+@client('logo,30x35') // Displays client company photo in 30 pixels width by 35 pixels height
 
 // etc
 ```
