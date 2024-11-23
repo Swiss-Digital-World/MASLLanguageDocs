@@ -410,6 +410,10 @@ Warning: Please note that @beginfornote is not to be used outside of the @beginf
 @noteimg('100x100') // Gives the note image with height and width of 100px
 @endcol
 
+@begincol
+@noteimg('fit') // Fits to width 
+@endcol
+
 @endrow
 
 @endfornote
